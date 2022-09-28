@@ -1,0 +1,12 @@
+.row{
+
+    display: grid;
+    
+    grid-template-columns:5fr 2fr ;
+}
+@media screen and (max-width:420px) {
+    .row{
+        width: 100%;
+    }
+    
+}

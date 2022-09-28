@@ -1,10 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+import StudyActivies from './StudyActivies/StudyActivies';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <h1>Mofassel</h1>
+     <StudyActivies></StudyActivies>
     </div>
   );
 }
