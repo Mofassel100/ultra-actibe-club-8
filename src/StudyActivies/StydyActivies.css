@@ -4,9 +4,24 @@
     
     grid-template-columns:5fr 2fr ;
 }
-@media screen and (max-width:420px) {
+/* @media screen and (max-width:500px) {
     .row{
-        width: 100%;
+        
+        display: grid;
+    
+        grid-template-columns:1fr ;
+        
+        
     }
     
 }
+@media screen and (min-width:5002px) {
+    .row{
+        
+        display: grid;
+    
+        grid-template-columns:5fr 2fr ;
+        
+    }
+    
+} */
