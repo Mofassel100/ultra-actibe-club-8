@@ -8,16 +8,9 @@ import './Studys.css'
 import StudyDetails from './StudyDetails/StudyDetails';
 import PersonalDetails from './PersonalDetail/PersonalDetail';
 
-
-
 const Studys = ({studyInfo}) => {
- 
-
 const [studyTime, setStudyTime]= useState([])
-
-    const AddTimeStudy= (props)=>{
-
-
+const AddTimeStudy= (props)=>{
 const newStudyTime = [...studyTime,props];
 setStudyTime(newStudyTime)
         
@@ -26,7 +19,7 @@ setStudyTime(newStudyTime)
    
     return (
         <div className='Stydus-all'>
-            <div className='bg-red-600'>
+            <div className=''>
                 <div><h1 className='text-center text-5xl my-10 text-sky-600 px-4'><FontAwesomeIcon icon={faBookOpenReader} className='mr-6' ></FontAwesomeIcon>
 
                     Study Education Activity </h1>
@@ -38,12 +31,12 @@ setStudyTime(newStudyTime)
                     key={studyINfo.id
                     } AddTimeStudy={AddTimeStudy} studyInfo={studyInfo}></StudyDetails>)}
 
-{/* <StudyDetails studyInfo={studyInfo}></StudyDetails> */}
+
                  
                 </div>
 
             </div>
-            <div className='bg-green-500'>
+            <div className=''>
 <PersonalDetails  studyTime={studyTime}></PersonalDetails>
 
             </div>

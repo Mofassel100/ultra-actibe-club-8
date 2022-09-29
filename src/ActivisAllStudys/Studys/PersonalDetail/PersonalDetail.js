@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 import './Personal.css'
 
 const PersonalDetails = ({studyTime}) => {
@@ -16,8 +16,23 @@ console.log(TimeCount)
 
 
  const [breakCount, setCound]= useState(0)
+ const localStoreAddDes =(breakCount)=>{
+   
+   if(breakCount){
+    const desplay = localStorage.getItem('breactTime')
+    console.log(desplay)
 
- const notify = () => toast("Wow so easy!");
+    localStorage.setItem("breactTime",JSON.stringify(breakCount))
+    // setCound(desplay)
+    
+    
+  }
+
+  // const localset = localStorage.setItem('breackTime',JSON.stringify(breakCount));
+  // return localset;
+ }
+localStoreAddDes(breakCount)
+//  const notify = () => toast("Wow so easy!");
   
 
     return (
@@ -54,10 +69,14 @@ console.log(TimeCount)
 <h2>Break time <span className='mx-3'>{breakCount}</span> second</h2>
 {/* Activity Completed start */}
 <br></br>
+<div>
 
-<button className="btn btn-active btn-primary" onClick={notify}>Activity Completed</button>
-<ToastContainer />
-   
+
+<button className="btn btn-active btn-primary">Activity Completed</button>
+{/* onClick={notify} */}
+
+
+</div>
   </div>
 
       </div>

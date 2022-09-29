@@ -3,3 +3,10 @@
 display: grid;
 grid-template-columns: 3fr 1fr;
 }
+@media screen  and(max-width:510px) {
+    .Stydus-all{
+        display: flex;
+        direction: row;
+    }
+    
+}

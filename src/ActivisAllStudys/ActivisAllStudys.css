@@ -1,22 +1,11 @@
 
-/* @media screen and (max-width:500px) {
+@media screen and (max-width:520px) {
     .row{
         
         display: grid;
     
         grid-template-columns:1fr ;
         
-        
     }
     
-}
-@media screen and (min-width:5002px) {
-    .row{
-        
-        display: grid;
-    
-        grid-template-columns:5fr 2fr ;
-        
-    }
-    
-} */
+} 
