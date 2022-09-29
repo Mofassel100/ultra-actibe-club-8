@@ -16,9 +16,6 @@ console.log(TimeCount)
  const [breakCount, setCound]= useState(0)
   
 
- 
-
-
     return (
         <div className='person-info'>
           <div className="card w-96 bg-base-100 shadow-xl">
@@ -36,18 +33,11 @@ console.log(TimeCount)
       
     </div>
   </div>
-</div>
-            {/* personal infomation start */}
-            <div className="card lg:card-side bg-base-100 shadow-xl">
-            
-
+</div>         
+  <div className="card lg:card-side bg-base-100 shadow-xl px-5">         
   <div>
  </div>
-  <div className="card-body">
-
-  
-   
-
+  <div className="card-body items-center text-center">
     {/* add a break start */}
     <h1 className='text-3xl'> Add A Break</h1>
     <p><button onClick={()=> setCound(20)}  className="btn btn-xs mr-1">20s</button><button onClick={()=> setCound(30)} className="btn btn-xs mr-1">30s</button><button onClick={()=> setCound(40)} className="btn btn-xs mr-1">40s</button><button onClick={()=> setCound(20)} className="btn btn-xs mr-1">20s</button></p>
@@ -64,8 +54,8 @@ console.log(TimeCount)
    
   </div>
 
-           </div>
-        </div>
+      </div>
+   </div>
     );
 };
 
