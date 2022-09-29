@@ -1,14 +1,15 @@
 
+import ActivisAllStudys from './ActivisAllStudys/ActivisAllStudys';
 import './App.css';
-import StudyActivies from './StudyActivies/StudyActivies';
+
 
 
 
 function App() {
   return (
     <div  className='grid grid-cols-1'>
-      <h1>Mofassel</h1>
-     <StudyActivies></StudyActivies>
+      <ActivisAllStudys></ActivisAllStudys>
+   
     </div>
   );
 }
