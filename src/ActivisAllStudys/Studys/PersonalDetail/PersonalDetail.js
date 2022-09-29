@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Personal.css'
 
 const PersonalDetails = ({studyTime}) => {
@@ -14,6 +16,8 @@ console.log(TimeCount)
 
 
  const [breakCount, setCound]= useState(0)
+
+ const notify = () => toast("Wow so easy!");
   
 
     return (
@@ -50,7 +54,9 @@ console.log(TimeCount)
 <h2>Break time <span className='mx-3'>{breakCount}</span> second</h2>
 {/* Activity Completed start */}
 <br></br>
-<button className="btn btn-active btn-primary">Activity Completed</button>
+
+<button className="btn btn-active btn-primary" onClick={notify}>Activity Completed</button>
+<ToastContainer />
    
   </div>
 
